@@ -297,7 +297,7 @@ class EigenfacesModel ( BaseModel ):
 sys.path.append ("..")
 
 # 1 - read images ATTENTION, chemin a changer - ATTENTION au \\
-[X,y] = read_images ("E:\\Fi5\\PROJ942\\Traitementimage\\Base_Visages_Groupe_a")#rucupère la base de donnée image
+[X,y] = read_images ("E:\\Fi5\\PROJ942\\Traitementimage\\Base_Visages")#rucupère la base de donnée image
 
 #n = 0
 ##cv2.imshow('image+str(n)',X[0])
@@ -377,7 +377,7 @@ imtest = imtest.convert ("L")
 test = np.asarray (imtest , dtype =np.uint8 )
 # model computation
 model = EigenfacesModel (X , y)
-NomBdd = ["Johan", "Michael", "Pierre", "Thomas"]
+NomBdd = ["Alec","Antoine","Camille","Johan","Jordi","Kibam", "Michael", "Pierre", "Thomas"]
 model = EigenfacesModel (X , y)
 print " predicted =",NomBdd[ model.predict(test)]
 
