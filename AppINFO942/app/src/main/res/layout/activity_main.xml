@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="1">
+<SurfaceView android:id="@+id/surfaceViewCamera" android:layout_width="fill_parent" android:layout_height="226dp"
+    android:layout_weight="0.98"></SurfaceView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:layout_width="389dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Texte Photo"
+            android:textSize="20sp"
+            android:id="@+id/idText" />
+
+        <Button
+            android:layout_width="395dp"
+            android:layout_height="match_parent"
+            android:id="@+id/b_upload"
+            android:text="Upload"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#039be5"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
