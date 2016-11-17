@@ -5,7 +5,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:weightSum="1">
 <SurfaceView android:id="@+id/surfaceViewCamera" android:layout_width="fill_parent" android:layout_height="226dp"
-    android:layout_weight="0.98"></SurfaceView>
+    android:layout_weight="0.99"></SurfaceView>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -13,15 +13,16 @@ android:weightSum="1">
         android:layout_height="37dp">
 
         <TextView
-            android:layout_width="389dp"
+            android:layout_width="425dp"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Texte Photo"
             android:textSize="20sp"
-            android:id="@+id/idText" />
+            android:id="@+id/idText"
+            android:layout_weight="5.62" />
 
         <Button
-            android:layout_width="395dp"
+            android:layout_width="271dp"
             android:layout_height="match_parent"
             android:id="@+id/b_upload"
             android:text="Upload"
@@ -30,8 +31,7 @@ android:weightSum="1">
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:textColor="#fff"
-            android:background="#039be5"
-            android:layout_weight="1" />
+            android:background="#039be5" />
     </LinearLayout>
 
 </LinearLayout>
